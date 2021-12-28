@@ -1,0 +1,28 @@
+song_1 = "";
+song_2 = "";
+
+function preload(){
+song_1= loadSound("song1 (1).mp3");
+song_2 = loadSound("song2.mp3");
+}
+
+scoreRightWrist = 0;
+scoreLeftWrist= 0;
+
+
+leftWristX = 0;
+leftWristY  = 0;
+
+
+function setup() {
+    canvas  =createCanvas(600, 500);
+    canvas.center();
+
+    video = createCapture(VIDEO);
+    video.hide();
+
+}
+
+function draw()  {
+    image(video , 0 , 0 , 600 , 500);
+}
